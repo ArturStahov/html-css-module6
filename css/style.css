@@ -14,8 +14,148 @@ img {
   height: auto;
 }
 
-a {
+/* a {
   font-family: "Kaushan Script", cursive;
-  /* font-family: 'Montserrat', sans-serif;
-  font-family: "Roboto", "Times New Roman", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+} */
+
+body {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+header {
+  padding: 28px 0px 128px 0px;
+}
+
+.container {
+  max-width: 1201px;
+  margin: 0 auto;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__list {
+  flex-basis: 491px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.logo a {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #95e1d3;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.nav__link a {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #95e1d3;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.section__service {
+  padding-bottom: 88px;
+}
+.section__heading {
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 63px;
+  max-width: 325px;
+  margin: 0 auto 63px;
+}
+
+.section__heading_firstline {
+  display: block;
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.section__heading_secondline {
+  display: block;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.section__heading::after {
+  content: "";
+  display: block;
+  border-bottom: #f38181 solid 2px;
+  width: 37px;
+  margin: 0 auto;
+}
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service__item {
+  flex-basis: 383px;
+  padding-left: 65px;
+  background-repeat: no-repeat;
+}
+.service__item:nth-child(-n + 3) {
+  margin-bottom: 100px;
+}
+
+.service__photography_ico {
+  background-image: url("../img/ico/photography.png");
+}
+.service__design_ico {
+  background-image: url("../img/ico/design.png");
+}
+.service__creativity_ico {
+  background-image: url("../img/ico/crteativ.png");
+}
+.service__seo_ico {
+  background-image: url("../img/ico/seo.png");
+}
+.service__css_ico {
+  background-image: url("../img/ico/css.png");
+}
+.service__digital_ico {
+  background-image: url("../img/ico/digital.png");
+}
+
+.service__item h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.service__item p {
+  font-size: 15px;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  line-height: 1.6;
+  color: #999999;
+}
+
+.section__teem_heading_correct {
+  margin: 0 auto 45px;
+}
+.section__teem_heading_paragraf {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  line-height: 1.6;
+  color: #999999;
+  margin-bottom: 90px;
 }
