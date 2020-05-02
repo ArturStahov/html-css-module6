@@ -14,6 +14,13 @@ img {
   height: auto;
 }
 
+:root {
+  --base__font: "Montserrat", sans-serif;
+  --second__font: "Roboto", "Times New Roman", sans-serif;
+  --section__hedind_font: "Kaushan Script";
+  --body__bg_color: #ffffff;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hiden {
@@ -50,8 +57,8 @@ input[type="radio"].visually-hiden {
 }
 
 body {
-  background-color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  background-color: var(--body__bg_color);
+  font-family: var(--base__font);
   color: rgb(51, 51, 51);
 }
 
@@ -80,7 +87,7 @@ header {
 
 .logo a {
   font-size: 30px;
-  font-family: "Montserrat";
+  font-family: var(--base__font);
   color: #95e1d3;
   font-weight: 700;
   line-height: 1.2;
@@ -88,7 +95,7 @@ header {
 
 .nav__link a {
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: var(--base__font);
   color: #95e1d3;
   text-transform: uppercase;
   line-height: 1.2;
@@ -128,14 +135,14 @@ header {
 .section__heading_firstline {
   display: block;
   font-size: 24px;
-  font-family: "Kaushan Script";
+  font-family: var(--section__hedind_font);
   font-weight: 400;
   margin-bottom: 17px;
 }
 .section__heading_secondline {
   display: block;
   font-size: 30px;
-  font-family: "Montserrat";
+  font-family: var(--base__font);
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 35px;
@@ -197,7 +204,7 @@ header {
 }
 .service__item p {
   font-size: 15px;
-  font-family: "Roboto", "Times New Roman", sans-serif;
+  font-family: var(--second__font);
   line-height: 1.6;
   color: #999999;
 }
@@ -212,7 +219,7 @@ header {
 .section__teem_heading_paragraf {
   text-align: center;
   font-size: 15px;
-  font-family: "Roboto", "Times New Roman", sans-serif;
+  font-family: var(--second__font);
   line-height: 1.6;
   color: #999999;
   margin-bottom: 90px;
@@ -307,7 +314,7 @@ header {
 
 .card__teem p {
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: var(--second__font);
   color: rgb(153, 153, 153);
   font-style: italic;
   line-height: 1.6;
@@ -349,7 +356,7 @@ header {
 
 .footer__form input::placeholder {
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: var(--second__font);
   color: rgb(204, 204, 204);
   font-weight: 300;
   font-style: italic;
